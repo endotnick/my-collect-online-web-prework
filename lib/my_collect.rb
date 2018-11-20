@@ -1,5 +1,5 @@
 def my_collect(array)
-  collect = []]
+  collect = []
   i = 0
   while i < arayy.size do
     collect[i] = yield array[i]
