@@ -1,8 +1,8 @@
 def my_collect(array)
-  collect = []
+  collect = array.clone
   i = 0
-  while i < array.size do
-    collect[i] = yield array[i]
+  while i < collect.size do
+    collect[i] = yield collect[i]
     i += 1
   end
   collect
